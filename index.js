@@ -8,7 +8,6 @@ var userClickedPattern = [];
 
 function playSound(name){
   var src = 'sounds/' + name + '.mp3';
-  console.log(src);
   var audio = new Audio(src);
   audio.play();
 }
@@ -43,7 +42,6 @@ function ButtonClicked(name){
 function CheckAnswer(colorIndex){
   if(index < gamePattern.length){
     if(colorIndex === gamePattern[index]){
-      console.log("Correct");
       index++;
     }
     else{
