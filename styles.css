@@ -17,6 +17,32 @@ body {
 
 }
 
+.startBtn{
+  margin: 25px;
+  display: inline-block;
+  width: 200px;
+  height: width/2;
+  border: 5px solid black;
+  border-radius: 10%;
+  font-size: 2rem;
+  font-family: 'Press Start 2P', cursive;
+  color: #FEF2BF;
+  background-color: #011F3F;
+}
+
+.startBtn:hover{
+  margin: 25px;
+  display: inline-block;
+  width: 200px;
+  height: width/2;
+  border: 5px solid black;
+  border-radius: 10%;
+  font-size: 2rem;
+  font-family: 'Press Start 2P', cursive;
+  color: #FEF2BF;
+  background-color: blue;
+}
+
 .btn {
   margin: 25px;
   display: inline-block;
