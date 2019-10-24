@@ -7,6 +7,20 @@ var randomChooseColor;
 var userClickedPattern = [];
 var onMobile = false;
 var width = window.innerWidth;
+
+if( navigator.userAgent.match(/Android/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)){
+   onMobile = true;
+   $("h1").html("Click Button To Start");
+   $("h1").after("<button>Start</button>");
+   $("button").addClass("startBtn");
+ }
+
 if(width <= 500){
   $("h1").html("Click Button To Start");
   $("h1").after("<button>Start</button>");
