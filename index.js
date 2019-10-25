@@ -34,6 +34,7 @@ if(width <= 500){
     else if(level >= 0 && gameOver){
       gameOver = false;
       level = 0;
+      index = 0;
       gamePattern = [];
       userClickedPattern = [];
       nextSequence();
@@ -115,6 +116,7 @@ $("button").on("click",function(){
   }
   else if(level >= 0 && gameOver){
     gameOver = false;
+    index = 0;
     level = 0;
     gamePattern = [];
     userClickedPattern = [];
